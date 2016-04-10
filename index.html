@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JSGetSet Generator</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<script type="text/javascript" src="generator.js"> </script>
+</head>
+<body>
+	<div class="title">JSGetSet Generator</div>
+	<div class="content">		
+		<br /><br />
+		<textarea rows="8" cols="100" id="propertiesInput" class="text-area" placeholder="Enter list of properties, separated by commas or line break"></textarea><br />
+		<input type="checkbox" id="comments" value="comments"> <label for="comments">Generate JSDoc comments</label>
+		<input type="checkbox" id="underscore" value="underscore"> <label for="underscore">Add underscore</label>
+		<br /><button type="button" class="generate-button" onclick="generate()">Generate</button>
+		<br /><br />
+		<b>Result : </b><br />
+		<textarea rows="30" cols="100" id="result" class="text-area"></textarea>
+	</div>
+	<div class="about"><a href="#openModal" class="about-button">About</a></div>
+	
+	<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h3>About</h3>
+		<p>JSGetSet Generator is a JavaScript code generator. This tool allows you to quickly and easily generate getters and setters for JavaScript objects.</p>
+		<p></p>
+	</div>
+</div>
+
+</body>
+</html>
